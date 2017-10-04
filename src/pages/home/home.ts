@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { NavController, Slides } from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -7,15 +7,11 @@ import { NavController, Slides } from 'ionic-angular';
 })
 export class HomePage {
 
-	@ViewChild(Slides) slides:Slides;
+	
 
   constructor(public navCtrl: NavController) {
 
   }
-ionViewDidLoad(){
-setTimeout(() =>
-	this.slides.slideTo(1,1000)
-	,1000);
-}
+
 
 }
